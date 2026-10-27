@@ -1,6 +1,6 @@
 import { StyleSheet, Text, type TextProps } from 'react-native';
 
-import { colors, fontSizes } from '@/constants/theme';
+import { colors, fontSizes, rtlText } from '@/constants/theme';
 
 type Variant = 'title' | 'subtitle' | 'body' | 'caption';
 
@@ -16,14 +16,15 @@ export function AppText({ variant = 'body', muted = false, style, ...rest }: App
 const styles = StyleSheet.create({
   base: {
     color: colors.text,
+    ...rtlText,
   },
   title: {
     fontSize: fontSizes.title,
-    fontWeight: '700',
+    fontWeight: '800',
   },
   subtitle: {
     fontSize: fontSizes.subtitle,
-    fontWeight: '600',
+    fontWeight: '700',
   },
   body: {
     fontSize: fontSizes.body,

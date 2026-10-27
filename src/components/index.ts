@@ -1,6 +1,11 @@
 // Import shared components from one place: import { AppButton, Screen } from '@/components';
+export { AnswerButton } from './AnswerButton';
 export { AppButton } from './AppButton';
 export type { AppButtonProps } from './AppButton';
 export { AppText } from './AppText';
 export type { AppTextProps } from './AppText';
+export { ProgressIndicator } from './ProgressIndicator';
+export { QuestionCard } from './QuestionCard';
+export { ResultsScreen } from './ResultsScreen';
+export { ScoreDisplay } from './ScoreDisplay';
 export { Screen } from './Screen';

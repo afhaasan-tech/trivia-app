@@ -9,7 +9,7 @@ type ScreenProps = {
   style?: ViewStyle;
 };
 
-// Wrap every screen in this so safe areas (notch, home bar) and padding stay consistent.
+// Wrap every screen in this so safe areas (notch, home bar), padding and RTL direction stay consistent.
 export function Screen({ children, style }: ScreenProps) {
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: colors.background,
+    direction: 'rtl',
   },
   content: {
     flex: 1,
