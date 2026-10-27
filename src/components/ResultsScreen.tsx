@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { colors, radius, spacing } from '@/constants/theme';
 import { AppButton } from './AppButton';
 import { AppText } from './AppText';
+import { ScoreText } from './ScoreText';
 
 type ResultsScreenProps = {
   score: number;
@@ -29,9 +30,7 @@ export function ResultsScreen({ score, total, onPlayAgain }: ResultsScreenProps)
           انتهت اللعبة!
         </AppText>
         <View style={styles.scoreCircle}>
-          <AppText style={styles.scoreText}>
-            {score} / {total}
-          </AppText>
+          <ScoreText score={score} total={total} style={styles.scoreText} />
         </View>
         <AppText style={styles.centered}>{text}</AppText>
       </View>

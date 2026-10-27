@@ -8,4 +8,5 @@ export { ProgressIndicator } from './ProgressIndicator';
 export { QuestionCard } from './QuestionCard';
 export { ResultsScreen } from './ResultsScreen';
 export { ScoreDisplay } from './ScoreDisplay';
+export { ScoreText } from './ScoreText';
 export { Screen } from './Screen';

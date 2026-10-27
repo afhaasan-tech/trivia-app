@@ -2,6 +2,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { colors, radius, spacing } from '@/constants/theme';
 import { AppText } from './AppText';
+import { ScoreText } from './ScoreText';
 
 type ScoreDisplayProps = {
   score: number;
@@ -12,9 +13,7 @@ export function ScoreDisplay({ score, total }: ScoreDisplayProps) {
   return (
     <View style={styles.pill} accessibilityLabel={`النتيجة ${score} من ${total}`}>
       <AppText style={styles.star}>⭐</AppText>
-      <AppText style={styles.text}>
-        {score} / {total}
-      </AppText>
+      <ScoreText score={score} total={total} style={styles.text} />
     </View>
   );
 }
